@@ -25,3 +25,17 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+### eslint ceheck
+
+node_modules/.bin/eslint --fix src/vuex/store.js
+
+## 自定义组件写法：
+
+1. 一个组件一个目录，如Tab,文件下有tab.vue 和index.js
+2. 使用: main.js 中
+
+```bash
+import Tab from './components/tab'
+Vue.use(Tab)
+```
